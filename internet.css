@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* 전체 조건 */
+body {font-family : "맑은 고딕"; font-size : 17px;}
+
+/* 제목 조건 */
+h1 {font-family : 궁서; font-size : 30px; letter-spacing : 15px;}	 /* mac은 궁서 글꼴이 없어 궁서체로 설정해야 표시됨 */
+h2 {font-size : 25px;}
+h3 {font-size : 20px;}
+
+/* 글꼴 조건 */
+.ita {font-style : italic;}
+.bold {font-weight : bold;}
+.underline{text-decoration : underline;}
+
+/* 글자색 조건 */
+.blue {color : #0000FF;}
+.red {color : #FF0000;}
+.green {color : #00FF00;}
+
+/* 배경 조건 */
+.back-grey{background-color : #D9D9D9;}
+.back-pink{background-color : #C8EBFA;}
+
+/* 2.역사 -> 들여쓰기 */
+div>p{text-indent : 30px;}
+
+/* 리스트 조건 */
+ul{list-style-type : square;}
+ol{list-style-type : none;}
+
+/* 테이블 조건 (head) */
+thead{background-color : #C8EBFA;}
+
+/* 테이블 조건 (td hover) */
+
+tbody>tr:hover {background-color : #EDD3ED;}
+
+/* 테이블 조건 (speed data) */
+td+td{text-align : right;}
+td+td:before{content:"약 ";}
+td+td:after{content:" (MB/초)";}
+
+/* 테이블 조건 (link) */
+td>a:link {color : #000000; text-decoration : none;}  /* 방문전  */
+td>a:visited {color : #000000;}  /* 방문후 */ 
+td>a:hover {color : #0000FF; text-decoration : underline;}  /* 마우스를 갖다 대었을 때 */
+td>a:active {color : #0000FF; text-decoration : underline;} /* 클릭했을 때  */
+
+
+
